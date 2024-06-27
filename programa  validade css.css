@@ -1,0 +1,77 @@
+body {
+  font-family: Verdana, sans-serif;
+  background-color: #0c1c85;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.form-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 40%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.select-store {
+  color: black;
+  font-weight: bold;
+}
+
+.form-container label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #001c85;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0046c8;
+}
+
+.resultado-container {
+  background-color: #f7ed15;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resultado-container h2 {
+  color: black;
+}
+
+#resultados {
+  margin-top: 10px;
+}
+
+.exportado-msg {
+  margin-top: 20px;
+  font-weight: bold;
+}

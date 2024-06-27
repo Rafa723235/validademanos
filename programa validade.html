@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Validade</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h2>Controle de Validade</h2>
+      <p class="select-store">Selecione a loja:</p>
+      <select id="select-store">
+        <option value="Brás">Brás</option>
+        <option value="Bresser">Bresser</option>
+        <option value="Vila Formosa">Vila Formosa</option>
+        <option value="Vila Carrão">Vila Carrão</option>
+        <option value="Vila Ré">Vila Ré</option>
+        <option value="Carapicuíba">Carapicuíba</option>
+        <option value="Vila Maria">Vila Maria</option>
+        <option value="Penha">Penha</option>
+      </select>
+      <label for="encarregado">Encarregado:</label>
+      <input type="text" id="encarregado" required>
+
+      <label for="quantidade">Quantidade do Produto com data próxima:</label>
+      <input type="number" id="quantidade" required>
+
+      <label for="nome-produto">Nome do produto:</label>
+      <input type="text" id="nome-produto" required>
+
+      <label for="codigo-produto">Código interno do produto:</label>
+      <input type="text" id="codigo-produto" required>
+
+      <label for="validade">Validade do produto:</label>
+      <input type="date" id="validade" required>
+
+      <button id="btn-salvar">Salvar</button>
+    </div>
+
+    <div class="resultado-container">
+      <h2>Resultados</h2>
+      <div id="resultados">
+        <!-- Aqui serão inseridos os resultados dinamicamente -->
+      </div>
+      <hr style="background-color: rgb(206, 168, 21);">
+      <button id="btn-exportar">Exportar para Excel</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
